@@ -30,12 +30,20 @@ The controller version seems to be very important, as not all endpoints always w
 7. open HAR file with editor and search for 'clients?'
 8. you find an entry: ... api/v2/sites/<b>SITE-ID</b>/clients?currentPage=1 ...
 9. not the SITE-ID an enter it to the [clients.php](clients.php) script
-10. don't forget to modify the clients.php script
-11. set '$omada_url', '$siteid', '$username', '$password'
+10. modify the clients.php script and set the environment variables (ip, user, password)
 
 
 # Problems / To-Do:
+- <b>only the first 100</b> clients are returned
 - errorhandling / optimize programflow 
 - automation of getting site-id
-- /{omadacId}/api/v2/sites does not seem to work?
 - reuse cookies until expiring
+- clients disconnected for long time don't show up in list (you have to temporary fix this if your homeautomation needs the json entry, modify output, add entry with state 'off')
+
+# Helpful
+thanks to mbentley and his shell script [shell script](https://gist.github.com/mbentley/03c198077c81d52cb029b825e9a6dc18)
+
+ 
+# Thoughts
+1. <b>/api/v2/sites/Default/clients/CLIENT-MAC-ADDRESS</b> thows error
+2. <b>/api/v2/sites</b> does not work to get site-id
