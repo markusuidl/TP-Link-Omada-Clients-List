@@ -1,10 +1,12 @@
 # TP-Link-Omada-Clients-List
-PHP Script to get connected devices with Omada Controller by your EAP accesspoints
-I use this script to check the state of my wifi devices and control my homeautomation
+PHP Script to get connected devices with Omada Controller by your EAP accesspoints.
+I use this script to check the state of my wifi devices and control my homeautomation.
+
+The script is not perfect but it works. Help, wishes, improvements are welcome.
 
 # BETA version - working (support/ help wanted)
 
-<b>Preface</b><br>
+<b>Preface / Why?</b><br>
 Originally I had Unifi hardware in use, there you could query the individual access points or the controller via SSH, which clients are connected.
 Omada access points support SSH (after activation) but do not offer a command to query the connected clients. You always have to query via the Omada software controller.
 
@@ -27,3 +29,9 @@ The controller version seems to be very important, as not all endpoints always w
 9. not the SITE-ID an enter it to the [clients.php](clients.php) script
 10. don't forget to modify the clients.php script
 11. set '$omada_url', '$siteid', '$username', '$password'
+
+
+# Problems / To-Do:
+- errorhandling optimize programflow 
+- automation of getting site-id
+- reuse cookies until expiring
