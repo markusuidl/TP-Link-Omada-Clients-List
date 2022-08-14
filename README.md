@@ -33,8 +33,10 @@ The controller version seems to be very important, as not all endpoints always w
 10. modify the clients.php script and set the environment variables (ip, user, password)
 
 
-# Problems / To-Do:
-- <b>only the first 100</b> clients are returned
+# Problems / restrictions / To-Do:
+- <b>only the first 100</b> clients are returned (tested with GetClients(1,100)
+- only pagesizes from omada webinterface are working!
+- having 28 clients: tested GetClients(1,10), GetClients(2,10), GetClients(3,10) where the last two returned the same results (hint for fetched all?)
 - errorhandling / optimize programflow 
 - automation of getting site-id
 - reuse cookies until expiring
