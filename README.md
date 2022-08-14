@@ -4,11 +4,14 @@ I use this script to check the state of my wifi devices and control my homeautom
 
 The script is not perfect but it works. Help, wishes, improvements are welcome.
 
-# BETA version - working (support/ help wanted)
+# BETA version - working (support/help wanted)
 
-<b>Preface / Why?</b><br>
-Originally I had Unifi hardware in use, there you could query the individual access points or the controller via SSH, which clients are connected.
+<details> 
+  <summary><b>Preface: Unifi</b></summary>
+   Originally I had Unifi hardware in use, there you could query the individual access points or the controller via SSH, which clients are connected.
 Omada access points support SSH (after activation) but do not offer a command to query the connected clients. You always have to query via the Omada software controller.
+</details>
+
 
 <b>API</b>
 The controller version seems to be very important, as not all endpoints always work in every version. The documentation is hard to find, I uploaded a file of another API version (might be helpful). [Link to API documentation](api_5.0.15.html)
@@ -32,6 +35,7 @@ The controller version seems to be very important, as not all endpoints always w
 
 
 # Problems / To-Do:
-- errorhandling optimize programflow 
+- errorhandling / optimize programflow 
 - automation of getting site-id
+- /{omadacId}/api/v2/sites does not seem to work?
 - reuse cookies until expiring
