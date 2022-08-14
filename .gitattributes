@@ -1,2 +1,2 @@
-*.html linguist-detectable=false
-*.php linguist-detectable=true
+* linguist-vendored
+*.html linguist-vendored=false
