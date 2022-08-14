@@ -41,7 +41,7 @@ The controller version seems to be very important, as not all endpoints always w
 - clients disconnected for long time don't show up in list (you have to temporary fix this if your homeautomation needs the json entry, modify output, add entry with state 'off')
 
 # Helpful
-thanks to mbentley and his shell script [shell script](https://gist.github.com/mbentley/03c198077c81d52cb029b825e9a6dc18)
+thanks to mbentley and his [shell script](https://gist.github.com/mbentley/03c198077c81d52cb029b825e9a6dc18)
 
  
 # Thoughts
