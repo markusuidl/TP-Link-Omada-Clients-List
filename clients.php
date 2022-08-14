@@ -1,7 +1,7 @@
 <?php
 
 $OMADA_URL = "https://<IP-OF-OMADA-CONTROLLER>:8043";
-$SITEID = "<ID-OF-YOUR-SITE>";           // i will describe later, how to get it
+$SITEID = "<ID-OF-YOUR-SITE>";           // see reedme.md how-to get your site-id
 $USERNAME = "<OMADA-USER>";
 $PASSWORD = "<OMADA-PASSWORD>";
 
@@ -18,7 +18,7 @@ $omadaclients = GetClients(1, 100);         //only works for the first or maximu
 header('Content-Type: application/json');
 
 $json = json_encode($omadaclients);
-file_put_contents("clients.json", $json);
+file_put_contents("clients.json", $json);   //store result for homeautomation
 echo $json;
 
 die();
